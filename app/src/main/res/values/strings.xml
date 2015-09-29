@@ -2,6 +2,6 @@
     <string name="app_name">Hello World</string>
 
     <string name="hello_world">What is your name?</string>
-    <string name="hello"></string>
+    <string name="hello">Hello</string>
     <string name="action_settings">Settings</string>
 </resources>
