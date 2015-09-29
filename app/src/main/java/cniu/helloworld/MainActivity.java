@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -14,6 +16,17 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(MainActivity.this, "Button Pressed", Toast.LENGTH_SHORT).show();
+                TextView str = (TextView)findViewById(R.id.textView2);
+                EditText txt = (EditText)findViewById(R.id.editText);
+                str.setText( "Hello, " + txt.getText().toString() + "!" );
+            }
+        });
     }
 
     @Override
@@ -38,9 +51,9 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void helloName(View view) {
-        TextView str = (TextView)findViewById(R.id.textView2);
-        EditText txt = (EditText)findViewById(R.id.editText);
-        str.setText( "Hello, " + txt.getText().toString() + "!" );
-    }
+//    public void helloName(View view) {
+//        TextView str = (TextView)findViewById(R.id.textView2);
+//        EditText txt = (EditText)findViewById(R.id.editText);
+//        str.setText( "Hello, " + txt.getText().toString() + "!" );
+//    }
 }

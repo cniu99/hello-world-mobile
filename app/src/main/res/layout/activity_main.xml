@@ -20,8 +20,8 @@
         android:text="Submit"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="helloName" />
+        android:layout_centerHorizontal="true" />
+        <!-- android:onClick="helloName" -->
 
     <EditText
         android:layout_width="wrap_content"
