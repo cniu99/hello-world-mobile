@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hello World</string>
+    <string name="app_name">Hello World!</string>
 
     <string name="hello_world">What is your name?</string>
     <string name="hello"></string>
